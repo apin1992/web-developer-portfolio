@@ -54,6 +54,7 @@ i:hover {
 #skills i:hover {
     transform: scale(1);
 }
+
 #skills {
     background-color: #333;
 
@@ -93,6 +94,7 @@ article {
     grid-auto-rows: auto;
     height: auto;
 }
+
 article img {
     padding: 10%;
 }
@@ -124,7 +126,8 @@ footer {
 .project:hover {
     transform: scale(1.1);
 }
-.project a:hover{
+
+.project a:hover {
     transform: scale(1);
 }
 
@@ -195,12 +198,13 @@ p {
 @media (max-width: 375px) {
     header {
         font-size: 10px;
-        color: red;
+
+
     }
 
     nav {
         font-size: 24px;
-        color: red;
+
     }
 }
 
@@ -208,10 +212,6 @@ p {
 @media (min-width: 376px) and (max-width: 576px) {
     body {
         width: 100%;
-    }
-
-    header {
-        color: red;
     }
 
     nav {
@@ -236,10 +236,12 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 80%;
+        text-align: center;
     }
 
     img {
-        max-width: 150px;
+        max-width: 100px;
     }
 
     #contact {
@@ -247,6 +249,8 @@ p {
         flex-direction: column;
         font-size: 12px;
         width: 70%;
+        text-align: center;
+
     }
 
     #contact i {
@@ -257,7 +261,7 @@ p {
 /* Media query for screens between 577px and 768px (Tablets) */
 @media (min-width: 577px) and (max-width: 768px) {
     header {
-        color: green;
+        color: #fff;
     }
 
     #projects {
@@ -287,7 +291,7 @@ p {
 /* Media query for screens between 769px and 992px (Medium Screens) */
 @media (min-width: 769px) and (max-width: 992px) {
     header {
-        color: red;
+        color: #fff;
     }
 
     #projects h2 {
@@ -298,7 +302,7 @@ p {
 /* Media query for screens between 993px and 1200px (Large Screens) */
 @media (min-width: 993px) and (max-width: 1200px) {
     header {
-        color: gold;
+        color: #fff;
     }
 
     #projects h2 {
@@ -309,7 +313,7 @@ p {
 /* Media query for screens larger than 1200px (Extra Large Screens) */
 @media (min-width: 1201px) {
     header {
-        color: green;
+        color: #fff;
     }
 
     #projects h2 {
