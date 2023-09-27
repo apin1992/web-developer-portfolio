@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #333;
-    background: linear-gradient(0deg, rgba(6, 6, 6, 0.3), rgba(12, 12, 12, 0.3)), url("../images/cover-2.jpg");
+    background: linear-gradient(0deg, rgba(6, 6, 6, 0.3), rgba(12, 12, 12, 0.3)), url("/images/banner.jpg");
     height: 70vh;
     color: #fff;
     text-align: center;
@@ -54,6 +54,10 @@ i:hover {
 #skills i:hover {
     transform: scale(1);
 }
+#skills {
+    background-color: #333;
+
+}
 
 h1 {
     padding-top: 10%;
@@ -88,6 +92,9 @@ article {
     gap: 10px;
     grid-auto-rows: auto;
     height: auto;
+}
+article img {
+    padding: 10%;
 }
 
 article i {
