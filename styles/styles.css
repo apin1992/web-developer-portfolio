@@ -1,0 +1,311 @@
+body {
+    font-family: 'EB Garamond', serif, Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    background: linear-gradient(0deg, rgba(6, 6, 6, 0.3), rgba(12, 12, 12, 0.3)), url("../images/cover-2.jpg");
+    height: 70vh;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav {
+    text-align: center;
+    font-size: 1.4rem;
+    height: 6vh;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+
+}
+
+i {
+    color: white;
+    float: right;
+    padding: 0 1vh;
+}
+
+.project-info i {
+    color: black;
+
+}
+
+a:hover,
+i:hover {
+    transform: scale(1.5);
+}
+
+#skills i:hover {
+    transform: scale(1);
+}
+
+h1 {
+    padding-top: 10%;
+    letter-spacing: 4px;
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    max-width: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    color: #000;
+    margin: 8vh;
+
+}
+
+article {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: auto;
+    height: auto;
+}
+
+article i {
+    font-size: 10rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.project:hover {
+    transform: scale(1.1);
+}
+.project a:hover{
+    transform: scale(1);
+}
+
+.project img {
+    max-width: 250px;
+    max-height: 200px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.project-info {
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    padding: 4vh;
+
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+}
+
+.contact {
+    color: #fff;
+    height: 100%;
+    padding: 5vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/model-1.jpg") center top;
+    background-size: cover;
+    z-index: 3;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.contact .social-icons {
+    position: initial;
+    margin-top: 2rem;
+}
+
+/* Media query for screens with a maximum width of 375px (Mobile Portrait) */
+@media (max-width: 375px) {
+    header {
+        font-size: 10px;
+        color: red;
+    }
+
+    nav {
+        font-size: 24px;
+        color: red;
+    }
+}
+
+/* Media query for screens between 376px and 576px (Mobile Landscape to Small Tablets) */
+@media (min-width: 376px) and (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        color: red;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        max-height: 100px;
+    }
+
+    .project-info {
+        display: none;
+    }
+
+    .project img {
+        max-width: 150px;
+    }
+
+    #skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        max-width: 150px;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        width: 70%;
+    }
+
+    #contact i {
+        display: none;
+    }
+}
+
+/* Media query for screens between 577px and 768px (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    header {
+        color: green;
+    }
+
+    #projects {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    main h2 {
+        color: #fff;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #projects h2 {
+        color: #000;
+        font-size: 14px;
+    }
+
+    #skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query for screens between 769px and 992px (Medium Screens) */
+@media (min-width: 769px) and (max-width: 992px) {
+    header {
+        color: red;
+    }
+
+    #projects h2 {
+        color: #000;
+    }
+}
+
+/* Media query for screens between 993px and 1200px (Large Screens) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    header {
+        color: gold;
+    }
+
+    #projects h2 {
+        color: #000;
+    }
+}
+
+/* Media query for screens larger than 1200px (Extra Large Screens) */
+@media (min-width: 1201px) {
+    header {
+        color: green;
+    }
+
+    #projects h2 {
+        color: #000;
+    }
+}
