@@ -195,7 +195,7 @@ p {
 }
 
 /* Media query for screens with a maximum width of 375px (Mobile Portrait) */
-@media (min-width:320px)and (max-width: 375px) {
+@media (min-width:320px)and (max-width: 376px) {
     header {
 
         font-size: 10px;
@@ -257,7 +257,7 @@ p {
 }
 
 /* Media query for screens between 376px and 576px (Mobile Landscape to Small Tablets) */
-@media (min-width: 376px) and (max-width: 576px) {
+@media (min-width: 375px) and (max-width: 576px) {
     body {
         width: 100%;
     }
